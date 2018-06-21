@@ -14,6 +14,9 @@
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/common.mk)
+# Boot animation
+#TARGET_SCREEN_WIDTH := 720
+#TARGET_SCREEN_HEIGHT := 1280
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/s3ve3g/full_s3ve3g.mk)
