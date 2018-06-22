@@ -13,11 +13,11 @@
 # limitations under the License.
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/s3ve3g/full_s3ve3g.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := GT-I9301I
-PRODUCT_NAME := rr_s3ve3g
+PRODUCT_NAME := cm_s3ve3g
