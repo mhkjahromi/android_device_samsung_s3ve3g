@@ -18,6 +18,23 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/s3ve3g/full_s3ve3g.mk)
 
-# Release name
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
+PRODUCT_NAME := omni_s3ve3g
 PRODUCT_RELEASE_NAME := GT-I9301I
-PRODUCT_NAME := lineage_s3ve3g
+PRODUCT_BRAND := samsung
+PRODUCT_DEVICE := s3ve3g
+PRODUCT_MODEL := S3 Neo
+PRODUCT_MANUFACTURER := m.h.k.jahromi
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
+PRODUCT_NAME := omni_s3ve3g
+
+
+TARGET_VENDOR_PRODUCT_NAME := s3ve3g_retail
+TARGET_VENDOR_DEVICE_NAME := s3ve3g
