@@ -19,7 +19,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/samsung/s3ve3g/full_s3ve3g.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/s3ve3g/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 # Device uses high-density artwork where available
